@@ -12,10 +12,15 @@ function Counter() {
 
   return (
     <div className="container">
-      <input type="number" value={count} onChange={handlechange}></input>
+      <input
+        type="number"
+        value={count}
+        onChange={handlechange}
+        placeholder="Choose initial number"
+      ></input>
       <p>Le compteur est à : {count} </p>
-      <button onClick={() => setCount(count + 1)}>+1</button>
-      <button onClick={() => setCount(count - 1)}>-1</button>
+      <button onClick={() => setCount(Number(count + 1))}>+1</button>
+      <button onClick={() => setCount(Number(count - 1))}>-1</button>
     </div>
   );
 }
