@@ -1,0 +1,10 @@
+.container {
+  background-color: rgb(86, 162, 224);
+  width: 30%;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+input {
+  border: none;
+}
